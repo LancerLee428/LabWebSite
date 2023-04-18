@@ -1,0 +1,55 @@
+.header{
+  box-sizing: border-box;
+  min-height: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 240, 240);
+  width: 100vw;
+  font-weight: bold;
+  .title{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between; 
+    font-size: 25px;
+    user-select: none;
+    .menu-item{
+      margin-right: 80px;
+    }
+    .menu-item:hover{
+      color: red;
+      text-decoration:underline;
+      text-underline-offset:10px;
+    }
+    .menu-item:active,
+    .menu-item:focus{
+      color: #5899df;
+      text-decoration:underline;
+      text-underline-offset:10px;
+    }
+  }
+  .lab-banner{
+    background-image: url('@/assets/img/90.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 60%;
+    object-fit: cover;
+    height: 300px;
+    width: 100vw;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .lab-content,
+    .lab-content-en {
+      color: azure;
+      font-weight:bold
+    }
+}
+}
+
