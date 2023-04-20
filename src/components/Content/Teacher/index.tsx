@@ -1,12 +1,12 @@
 import "./index.less";
 import Title from "./Title";
-import TeamItem from "./TeamItem";
+import Team from "./Team";
 
 const Teacher = () => {
   return (
     <section className="team">
       <Title />
-      <TeamItem />
+      <Team />
     </section>
   );
 };
