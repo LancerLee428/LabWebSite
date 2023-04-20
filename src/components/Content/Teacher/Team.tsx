@@ -3,11 +3,21 @@ import TeamItem from "./TeamItem";
 
 const Team = () => {
   return (
-    <section className="team-item">
-      {TEACHER_INFO.map((item) => {
-        return <TeamItem path={item.path} name={item.name} key={item.id} />;
-      })}
-    </section>
+    <>
+      <section className="team-item">
+        {TEACHER_INFO.map((item) => {
+          return (
+            <TeamItem
+              path={item.path}
+              name={item.name}
+              tag={item.tag}
+              anchor={item.anchor}
+              key={item.id}
+            />
+          );
+        })}
+      </section>
+    </>
   );
 };
 

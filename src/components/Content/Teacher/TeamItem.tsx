@@ -1,8 +1,12 @@
-const TeamItem = ({ path, name }) => {
+const TeamItem = ({ path, name, tag, anchor }) => {
   return (
     <section>
       <img src={path} alt={name} />
-      <div className="name">{name}</div>
+      <div className={tag}>
+        <a href={anchor}>
+          <span>{name}</span>
+        </a>
+      </div>
     </section>
   );
 };
