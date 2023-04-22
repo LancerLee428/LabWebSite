@@ -1,6 +1,7 @@
 import "./index.less";
 import Banner from "./Banner";
 import FooterMenu from "./FooterMenu";
+import Earth from "@/common/Earth";
 
 const Footer = ({ setPath }) => {
   return (
@@ -9,6 +10,7 @@ const Footer = ({ setPath }) => {
         <footer className="inner-footer">
           <Banner />
           <FooterMenu setPath={setPath} />
+          <Earth />
         </footer>
       </footer>
     </>

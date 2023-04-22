@@ -1,45 +1,48 @@
 .footer{
   box-sizing: border-box;
-  min-height: 140px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(52, 50, 50);
+  background-color: #1d2630;
   width: 100vw;
-  .banner{
-    text-align: center;
-    color: whitesmoke;
-    margin-bottom: 20px;
-    .banner-head{
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 5px;
+  .inner-footer{
+    position: relative;
+    .banner{
+      text-align: center;
+      color: whitesmoke;
+      margin-bottom: 20px;
+      .banner-head{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .banner-content{
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
     }
-    .banner-content{
+    .footer-menu{
+      display: flex;
+      justify-content: space-between;
       font-size: 15px;
-      margin-bottom: 5px;
+      user-select: none;
+      .footer-menu-item{
+        margin-right: 10px;
+        color: white;
+      }
+      .footer-menu-item:not(:first-child)::before{
+        display: inline-block;
+        margin: 0 10px 3px 0;
+        height: 15px;
+        vertical-align: middle;
+        border-right: 1px solid white;
+        content: "";
+      }
+      .footer-menu-item:hover{
+        color: aqua;
+      }
     }
-  }
-  .footer-menu{
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    user-select: none;
-    .footer-menu-item{
-      margin-right: 10px;
-      color: white;
-    }
-    .footer-menu-item:not(:first-child)::before{
-      display: inline-block;
-      margin: 0 10px 3px 0;
-      height: 15px;
-      vertical-align: middle;
-      border-right: 1px solid white;
-      content: "";
-    }
-    .footer-menu-item:hover{
-      color: aqua;
-    }
-  }
+  } 
 }
