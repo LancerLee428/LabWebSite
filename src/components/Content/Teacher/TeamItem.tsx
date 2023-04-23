@@ -1,13 +1,13 @@
-const TeamItem = ({ path, name, tag, anchor }) => {
+const TeamItem = ({ id, ...props }) => {
   return (
     <section>
       <div className="box">
         <div className="cover"></div>
-        <img src={path} alt={name} />
+        <img src={props.path} alt={props.name} />
       </div>
-      <div className={tag}>
-        <a href={anchor}>
-          <span>{name}</span>
+      <div className={props.tag}>
+        <a href={props.anchor}>
+          <span>{props.name}</span>
         </a>
       </div>
     </section>

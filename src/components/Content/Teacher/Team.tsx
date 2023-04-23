@@ -6,15 +6,7 @@ const Team = () => {
     <>
       <section className="team-item">
         {TEACHER_INFO.map((item) => {
-          return (
-            <TeamItem
-              path={item.path}
-              name={item.name}
-              tag={item.tag}
-              anchor={item.anchor}
-              key={item.id}
-            />
-          );
+          return <TeamItem key={item.id} {...item} />;
         })}
       </section>
     </>
