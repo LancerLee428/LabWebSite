@@ -1,7 +1,10 @@
 const TeamItem = ({ path, name, tag, anchor }) => {
   return (
     <section>
-      <img src={path} alt={name} />
+      <div className="box">
+        <div className="cover"></div>
+        <img src={path} alt={name} />
+      </div>
       <div className={tag}>
         <a href={anchor}>
           <span>{name}</span>
