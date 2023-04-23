@@ -5,7 +5,7 @@ import Resume from "./Resume";
 
 const Teacher = () => {
   return (
-    <>
+    <section className="team-container">
       <section className="team">
         <Title />
         <Team />
@@ -13,7 +13,7 @@ const Teacher = () => {
       <section className="team-resume">
         <Resume />
       </section>
-    </>
+    </section>
   );
 };
 
