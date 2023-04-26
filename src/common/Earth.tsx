@@ -1,4 +1,4 @@
-import "./index.less";
+import "./earth.less";
 
 const Earth = () => {
   return (

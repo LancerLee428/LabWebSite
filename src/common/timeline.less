@@ -1,0 +1,107 @@
+// @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900);
+
+.time-line{
+  background-color:#212226;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  --background: #212226;
+  --primary: #00af41;
+  --line: #a6a7b5;
+}
+
+article {
+  padding: .25rem .5rem 0 1rem;
+  background: var(--background);
+}
+
+dl {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  grid-template-rows: auto auto;
+  .cell {
+    grid-column: span 2;
+    display: flex;
+    padding: 0 1rem;
+    &:nth-child(2) {
+      grid-column: span 3;
+      justify-content: flex-end;
+    }
+    &:nth-child(4){
+      grid-column: span 2;
+      justify-content: flex-end;
+    }
+    &:nth-child(5){
+      grid-column: span 2;
+      justify-content: flex-start;
+    }      
+    .cell-content {      
+      display: inline-flex;
+      flex-direction: column;
+      border-left: 1px dashed var(--line);
+      position: relative;
+      background: var(--background);
+      &::after {
+        content: '';
+        display: block;
+        background: var(--line);
+        height: .5rem;
+        width: .5rem;
+        position: absolute;
+        left: -.25rem;
+        border-radius: 50%;
+      }
+      dt {
+        background: var(--background);
+        color: var(--primary);        
+        padding-bottom: .25em;
+        position: relative;
+        left: -.25rem;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: 600;        
+      }
+      dd {
+        background: var(--background);
+        margin: 0;
+        position: relative;
+        left: -.25rem;
+        color: #f4f4f6;
+        font-size: 14px;
+      }
+    }
+    &:nth-child(odd) .cell-content {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+      &::after {
+         bottom: -.25rem;
+      }
+      dd:last-child {
+        padding-bottom: .5rem;
+      }
+    }
+    &:nth-child(even) .cell-content {
+      padding-top: 1rem;
+      position: relative;
+      top: -1px;
+      border-top: 1px solid var(--line);
+      &::after {
+        top: -.25rem;
+      }
+      dt {
+        padding-top: .5rem;
+      }
+      dd {
+        flex-grow: 1;
+      }
+    }
+    &:last-child .cell-content {
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+}

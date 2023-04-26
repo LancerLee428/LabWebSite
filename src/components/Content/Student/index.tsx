@@ -1,9 +1,10 @@
 import "./index.less";
+import TimeLine from "@/common/TimeLine";
 
 const Student = () => {
   return (
-    <section>
-      在校生
+    <section className="student">
+      <TimeLine />
     </section>
   );
 };

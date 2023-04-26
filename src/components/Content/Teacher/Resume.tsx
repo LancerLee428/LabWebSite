@@ -1,3 +1,5 @@
+import TimeLine from "@/common/TimeLine";
+
 const Resume = () => {
   return (
     <section className="resume-container">
@@ -12,7 +14,8 @@ const Resume = () => {
             <div className="email">zxs@cumtb.edu.cn</div>
           </section>
           <section className="resume-right">
-            <div>这是简历</div>
+            {/* <h1>个人经历</h1> */}
+            <TimeLine />
           </section>
         </section>
       </section>
