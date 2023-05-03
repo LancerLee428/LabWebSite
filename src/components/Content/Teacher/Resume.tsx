@@ -1,36 +1,27 @@
 import TimeLine from "@/common/TimeLine";
+import RESUMEINFO from "@/assets/info/resumeInfo";
 
 const Resume = () => {
   return (
     <section className="resume-container">
       <section className="tag-resume">
-        <section id="zxs-resume">
-          <section className="resume-left">
-            <img
-              src="https://dcxy.cumtb.edu.cn/__local/6/0A/42/DBEB8C7DA479DBE2753C9B1CB2D_12FC9C1D_32144F.jpg"
-              alt=""
-            />
-            <div className="name-en">赵学胜教授</div>
-            <div className="email">zxs@cumtb.edu.cn</div>
-          </section>
-          <section className="resume-right">
-            {/* <h1>个人经历</h1> */}
-            <TimeLine />
-          </section>
-        </section>
-      </section>
-
-      <section id="swb-resume">
-        <img src="" alt="" />
-        孙老师简历
-      </section>
-      <section id="fdq-resume">
-        <img src="" alt="" />
-        范老师简历
-      </section>
-      <section id="gw-resume">
-        <img src="" alt="" />
-        郭老师简历
+        {RESUMEINFO.map((item) => {
+          const { id, imgSrc, name, email, key, content } = item;
+          return (
+            <>
+              <section id={id}>
+                <section className="resume-left">
+                  <img src={imgSrc} alt="" />
+                  <div className="name-en">{name}</div>
+                  <div className="email">{email}</div>
+                </section>
+                <section className="resume-right">
+                  <TimeLine key={key} content={content} />
+                </section>
+              </section>
+            </>
+          );
+        })}
       </section>
     </section>
   );
