@@ -1,3 +1,7 @@
+@color-even: #ffffff;
+@title-color-even: #0c1022;
+@font-color-even: #212226;
+
 @keyframes animate{
   0%{
     transform: rotate(0deg);
@@ -117,6 +121,9 @@
         background-color: #0c1022;
         color: #ffffff;
       }
+      .resume-right{
+        width: 100%;
+      }
       #zxs-resume{
         width: 100vw;
         display: flex;
@@ -165,6 +172,30 @@
           h1{
             color:rgba(0, 0, 0, .75)
           }
+          .time-line{
+            background: @color-even;
+            opacity: 0.92;
+            article{
+              background: @color-even;
+              .cell{
+                &:nth-child(5){
+                  grid-column: span 2;
+                  justify-content: flex-end;
+                }
+                .cell-content{
+                  background: @color-even;
+                  dt{
+                    background: @color-even;
+                    color: @title-color-even;
+                  }
+                  dd{
+                    background: @color-even;
+                    color: @font-color-even;
+                  }
+                } 
+              }
+            }
+          }
         }
       }
       #fdq-resume{
@@ -189,6 +220,14 @@
         .resume-right{
           h1{
             color:rgba(0, 0, 0, .75)
+          }
+          article{
+            .cell{
+              &:nth-child(5){
+                grid-column: span 2;
+                justify-content: flex-end;
+              }
+            }
           }
         }
       }
@@ -215,9 +254,32 @@
           h1{
             color:rgba(0, 0, 0, .75)
           }
+          .time-line{
+            background: @color-even;
+            opacity: 0.92;
+            article{
+              background: @color-even;
+              .cell{
+                &:nth-child(5){
+                  grid-column: span 2;
+                  justify-content: flex-end;
+                }
+                .cell-content{
+                  background: @color-even;
+                  dt{
+                    background: @color-even;
+                    color: @title-color-even;
+                  }
+                  dd{
+                    background: @color-even;
+                    color: @font-color-even;
+                  }
+                } 
+              }
+            }
+          }
         }
       }
     }
-    
   }
 }
