@@ -93,8 +93,6 @@
     }
   }
 
-
-
   @media (max-width: 1200px) {
     .team-item{
       display: grid;
@@ -121,57 +119,41 @@
         background-color: #0c1022;
         color: #ffffff;
       }
+      .resume-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .name-en{
+          font-family: cursive;
+          font-size: 30px;
+        }
+        .email{
+          font-size: 25px;
+          font-style: italic;
+        }
+      }
       .resume-right{
         width: 100%;
+        .direction-card{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
       }
       #zxs-resume{
         width: 100vw;
         display: flex;
         margin: 0 0 20px 0;
         padding-left: 20px;
-        .resume-left{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .name-en{
-            font-family: cursive;
-            font-size: 30px;
-          }
-          .email{
-            font-size: 25px;
-            font-style: italic;
-          }
-        }
-        .resume-right{
-          h1{
-            color:rgba(0, 0, 0, .75)
-          }
-        }
       }
       #swb-resume{
         width: 100vw;
         display: flex;
         margin: 0 0 20px 0;
         padding-left: 20px;
-        .resume-left{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .name-en{
-            font-family: cursive;
-            font-size: 30px;
-          }
-          .email{
-            font-size: 25px;
-            font-style: italic;
-          }
-        }
         .resume-right{
-          h1{
-            color:rgba(0, 0, 0, .75)
-          }
           .time-line{
             background: @color-even;
             opacity: 0.92;
@@ -203,24 +185,7 @@
         display: flex;
         margin: 0 0 20px 0;
         padding-left: 20px;
-        .resume-left{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .name-en{
-            font-family: cursive;
-            font-size: 30px;
-          }
-          .email{
-            font-size: 25px;
-            font-style: italic;
-          }
-        }
         .resume-right{
-          h1{
-            color:rgba(0, 0, 0, .75)
-          }
           article{
             .cell{
               &:nth-child(5){
@@ -236,24 +201,7 @@
         display: flex;
         margin: 0 0 20px 0;
         padding-left: 20px;
-        .resume-left{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .name-en{
-            font-family: cursive;
-            font-size: 30px;
-          }
-          .email{
-            font-size: 25px;
-            font-style: italic;
-          }
-        }
         .resume-right{
-          h1{
-            color:rgba(0, 0, 0, .75)
-          }
           .time-line{
             background: @color-even;
             opacity: 0.92;

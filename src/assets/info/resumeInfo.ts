@@ -50,6 +50,7 @@ const RESUMEINFO = [
         // content3: "",
       },
     ],
+    direction: [],
   },
   {
     id: "swb-resume",
@@ -92,6 +93,7 @@ const RESUMEINFO = [
         content1: "担任遥感与地理信息系主任",
       },
     ],
+    direction: [],
   },
   {
     id: "fdq-resume",
@@ -126,6 +128,7 @@ const RESUMEINFO = [
         content1: "晋升副研究员",
       },
     ],
+    direction: [],
   },
   {
     id: "gw-resume",
@@ -160,6 +163,7 @@ const RESUMEINFO = [
         content1: "晋升副研究员",
       },
     ],
+    direction: [],
   },
 ];
 
