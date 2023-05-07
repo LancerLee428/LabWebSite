@@ -2,7 +2,7 @@ import "./index.less";
 
 const Direction = () => {
   return (
-    <section>
+    <section className="direction-container">
       研究方向
     </section>
   );

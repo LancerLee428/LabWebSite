@@ -1,5 +1,5 @@
-import DIRECTION_INFO from "./DirectionInfo";
-import DirectCar from "./DirectCar";
+import DIRECTION_INFO from "@/assets/info/DirectionInfo";
+import DirectCar from "@/common/DirectCar";
 
 const Direction = () => {
   return (
@@ -11,14 +11,7 @@ const Direction = () => {
         </section>
         <section className="car-layout">
           {DIRECTION_INFO.map((item) => {
-            return (
-              <DirectCar
-                menuLogo={item.logo}
-                menuName={item.name}
-                menuContent={item.content}
-                key={item.id}
-              />
-            );
+            return <DirectCar {...item} key={item.id} />;
           })}
         </section>
       </section>
