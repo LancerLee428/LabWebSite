@@ -1,9 +1,10 @@
 import "./index.less";
+import DirectionCar from "./DirectionCar";
 
 const Direction = () => {
   return (
     <section className="direction-container">
-      研究方向
+      <DirectionCar />
     </section>
   );
 };
